@@ -1,0 +1,29 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: mcp-solicitation
+  ai:
+    mcp:
+      server:
+        name: mcp-solicitation
+        description: Microservice for managing solicitations
+        version: 0.0.1
+        type: ASYNC
+        capabilities:
+          tool: true
+          resource: true
+          prompt: true
+          completion: true
+  main:
+    banner-mode: off
+logging:
+  level:
+    root: OFF
+    org.springframework: OFF
+    com.br.com.yhugorocha: OFF
+
+
+
+
